@@ -1,0 +1,19 @@
+{
+    "name": "sqlserver-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.sqlserver.SqlServerConnector",
+        "tasks.max": "1",
+        "topic.prefix": "sqlserver-sj",
+        "database.hostname": "10.10.65.5",
+        "database.port": "1433",
+        "database.user": "sa",
+        "database.password": "YourStrong@Passw0rd",
+        "database.names" : "sapujagad",
+        "database.server.name": "fullfillment_sqlserver-sj",
+        "database.whitelist": "sapujagad",
+        "table.include.list": "cdc.users",
+        "database.history.kafka.bootstrap.servers": "10.10.65.1:9092",
+        "database.history.kafka.topic": "sqlserver-sj.fullfillment",
+        "database.encrypt": false
+    }
+}

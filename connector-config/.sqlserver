@@ -1,0 +1,4 @@
+remove 3DES_EDE_CBC from java.security file
+
+enable cdc on the database
+enable cdc on the table
